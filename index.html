@@ -1,85 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ronit Khatri</title>
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css"/>
-
+    
     <!-- Favicon -->
     <link rel="icon" href="Favicon/favicon.ico" />
-
+    
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+    rel="stylesheet"/>
+    
 
-  <body>
-    <!-- <img class="top-cloud" src="Images/cloud.png" alt="cloud" /> -->
-    <div class="upper-portion">
-      <div class="top-container">
-        <h1>I'm Ronit</h1>
-        <h3 class="sub-heading">a <span class="text-style"> web</span> designer</h3>
-      </div>
-      <!-- <img class="bottom-cloud" src="Images/cloud.png" alt="cloud" /> -->
-      <img src="Images/City-01.png" alt="mountain" height="550" width="100%" />
-    </div>
-      <div class="middle-container">
-        <div class="profile">
-          <img class="profile-pic" src="Images/Profile picture.png" alt="profile pic" height="150px" width="150px"/>
-          <h2>Hello.</h2>
-          <p class="intro"> I am Ronit Khatri, a Web Developer and Designer based in India.</p>
-        </div>
-      </div>
-          <hr />
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/bbf65b4346.js" crossorigin="anonymous"></script>
 
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="skill-1" src="Images/computer.png" alt="computer" />
-          <h3>Design and Development</h3>
-          <p>
-            <!-- As a hobby, I learned to code and later developed websites.
-            Ultimately, I turned my hobby into a career and now I do it for
-            others with passion. -->
-            In the initial days it was my hobby to learn different coding 
-            languages and create something of my own but then Ultimately, 
-            I turned my hobby into passion and now I contribute and create
-             a lot of development based projects.
-          </p>
-        </div>
-        <div class="skill-row">
-          <img class="skill-2" src="Images/chillies.png" alt="chillies" />
-          <h3>Writing and Sketching</h3>
-          <p>
-            I write blogs on what I am learning currently at Medium and 
-            also check out my instagram page where I write when I am in 
-            the mood.
-          </p>
-        </div>
-      </div>
-      <hr />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Would you like me to design a beautiful website for you?</h3>
-        <p class="contact-info">
-          If you want to a website for your bussiness or for your personal use, I am always there for you.
-        </p>
-        <a class="btn" href="mailto:ronitkhatri44@gmail.com">CONTACT ME</a>
-      </div>
+<body>
+    <!-- <div class="preloader"> -->
     </div>
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/ronit-khatri/
-      ">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/khatri_ronit1">Twitter</a>
-      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-      <p class="copyright-info">© 2018 Ronit Khatri.</p>
-    </div>
-  </body>
+    <header>
+        <a href="C:\Users\Asus\OneDrive\Desktop\Web app\Parallax Scrolling Website\index.html" class="logo">Ronit</a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Work</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+        </ul>
+    </header>
+    <section class="top-container">
+        <h2 id="text">Hi, I'm Ronit</h2>
+        <a href="#about" id="button">Explore</a>
+        <div class='scrolldown'>
+            <div class="chevrons">
+              <div class='chevrondown'></div>
+              <div class='chevrondown'></div>
+            </div>
+        </div>
+        <img src="images/mountainsandsky.png" id="mountainsandsky">
+        <img src="images/lake.png" id="lake">
+        <img src="images/stars.png" id="stars">
+        <img src="images/middle_scene.png" id="middle_scene">
+        <img src="images/moon.png" id="moon" >
+        <img src="images/birds.png" id="birds">
+        <img src="images/front_scene.png" id="front_scene">
+    </section>
+    
+    <div class="middle-container" id="about">        
+        <div class = "nprofile" data-aos = "fade-up" >
+            <h2>About me</h2>
+            <span>My Introduction</span>
+            <div class="about-container grid" data-aos = "fade-up">
+                <img class="profile-pic about-image" src="Images/Profile picture.png" alt="profile pic"/>
+                <div class="about-data">
+                    <p class="about-description"> 
+                        Hi! 👋 I am Ronit Khatri, a 19-year-old engineering sophomore pursuing BTech. I
+                        am a passionate self-learner, open source enthusiast, exploring and building projects👨‍💻 using various 
+                        technologies. I am a frontend Web developer and Designer well versed in HTML, CSS, JavaScript.
+                    </p>
+                    <div class="about-button">
+                        <a download href="" class="button button--flex">Resume
+                        <i class="fas fa-file-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="skills" data-aos = "fade-up" id="skills">
+            <h2>My Skills.</h2>
+            <div class="skill-row" data-aos = "fade-up">
+                <img class="skill-1-img" src="Images/computer.png" alt="computer" />
+                <h3>Design and Development</h3>
+                <p>
+                    In the initial days it was my hobby to learn different coding 
+                    languages and create something of my own but then Ultimately, 
+                    I turned my hobby into passion and now I contribute and create
+                    a lot of development based projects.
+                </p>
+            </div>
+            <div class="skill-row" data-aos = "fade-up" id="skills">
+                <img class="skill-2-img" src="Images/chillies.png" alt="chillies" />
+                <h3>Writing and Sketching</h3>
+                <p>
+                    I write blogs on what I am learning currently at Medium and 
+                    also check out my instagram page where I write when I am in 
+                    the mood.
+                </p>
+            </div>
+        </div>
+            <hr>
+
+        </div>
+        
+        <section id = "contact-me">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span
+                                ><img src="Images/location.png" alt="location img"
+                                /></span>
+                                <span>New Delhi, India</span>
+                            </li>
+                            <li>
+                                <span><img src="Images/mail.png" alt="mail img" /></span>
+                                <span>ronitkhatri44@gmail.com</span>
+                            </li>
+                            <li>
+                                <span><img src="Images/call.png" alt="call img" /></span>
+                                <span>+91 9871471133</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <div class="form-box">
+                        <div class="form-input w50">
+                            <input type="text" required />
+                            <span>First Name</span>
+                        </div>
+                        <div class="form-input w50">
+                            <input type="text" required />
+                            <span>Last Name</span>
+                        </div>
+                        <div class="form-input w50">
+                            <input type="email" required />
+                            <span>Email Address</span>
+                        </div>
+                        <div class="form-input w50">
+                            <input type="text" required />
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="form-input w100">
+                            <textarea required></textarea>
+                            <span>Writer your meassage here...</span>
+                        </div>
+                        <div class="form-input w100">
+                            <input type="submit" value="send" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="social">
+            <ul class="icon-list">
+                <li class="icon-item">
+                    <a href="https://www.instagram.com/ronitxx9/" class="icon-link">
+                    <i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="icon-item">
+                    <a href="https://github.com/Ronit-02" class="icon-link">
+                    <i class="fab fa-github-alt"></i></a>
+                </li>
+                <li class="icon-item">
+                    <a href="https://twitter.com/khatri_ronit1" class="icon-link">
+                    <i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="icon-item">
+                    <a href="https://www.linkedin.com/in/ronit-khatri/" class="icon-link">
+                    <i class="fab fa-linkedin-in"></i></a>
+                </li>    
+            </ul>
+        </section>
+        
+        <div class="bottom-container">
+            <p class="copyright-info">© 2018 Ronit Khatri.</p>
+
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 130,
+            duration: 1000,
+          }); 
+        </script>
+        <script src="styles.js"></script>
+    </body>
+
 </html>
+    
